@@ -4,7 +4,7 @@
 ## Table of Contents
 
 * [Description](#description)
-* [ProjectStructure](#project_structure)
+* [ProjectStructure](#projectstructure)
 * [Usage](#usage)
 * [Dependencies](#dependencies)
 
