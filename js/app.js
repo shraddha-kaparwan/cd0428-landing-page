@@ -110,7 +110,3 @@ sections.forEach(activate)
 
 // Scroll to section on link click
 document.querySelectorAll('.menu__link').forEach(scrollToSection)
-
-
-
-
