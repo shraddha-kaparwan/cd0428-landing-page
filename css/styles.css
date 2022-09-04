@@ -225,3 +225,21 @@ section.active .landing__container::after {
 		           rotate(-360deg);
 	}
 }
+
+/*Subscription Form success message and box*/
+
+#success-message {
+    display: none;
+}
+  
+#success-message.show {
+    display: block;
+}
+
+.box{
+    margin:0 auto; 
+    width: 600px; 
+    padding: 20px;
+    background:gray;
+    border:2px solid #333;
+}

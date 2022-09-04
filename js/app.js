@@ -75,8 +75,10 @@ function activateNav(section) {
     const section_nav = document.querySelector(`[href="#${section.id}"]`);
     if (rect.top <= 200 && rect.bottom >= 200) {
         section_nav.classList.add("active");
+        section.classList.add("active");
     } else {
         section_nav.classList.remove("active");
+        section.classList.remove("active");
     }
     
 }
@@ -89,7 +91,7 @@ function scrollToSection(section_nav) {
         scrollBy({
             top: document
                 .querySelector(e.target.getAttribute("href"))
-                .getBoundingClientRect().top,
+                .getBoundingClientRect().top - 50,
             behavior: "smooth",
           });
     });
@@ -110,3 +112,14 @@ sections.forEach(activate)
 
 // Scroll to section on link click
 document.querySelectorAll('.menu__link').forEach(scrollToSection)
+
+// Subscription form
+const form = document.querySelector('form');
+const successMessage = document.querySelector('#success-message');
+
+// display success message on click
+function handleForm(event) { 
+    event.preventDefault(); 
+    successMessage.classList.add('show');
+} 
+form.addEventListener('submit', handleForm);
